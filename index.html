@@ -9,6 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f0c2108da8.js" crossorigin="anonymous"></script>
+    <!-- font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!--  -->
      <!-- customize config -->
      <script>
         tailwind.config = {
@@ -16,13 +21,68 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
-            }
-          }
+                'btn-colors':'#ABEF5F',
+                'color-1':'#494949',
+                'color-2':'#212121',
+                'color-3':'#737373',
+                'color-4':'#A0A0A0',
+                'color-5':'#E9E9E9'
+                 },
+                 fontFamily:{
+                  manrope:['Manrope', 'sans-serif'],
+              },
+              
+            },
+          },
         }
       </script>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="md:max-w-[80%] mx-auto bg-[#FFFFFF]">
+        <div class="navbar bg-base-100 my-4">
+            <div class="navbar-start">
+              
+              <div class="rounded-full flex items-center space-x-2">
+                <div class="bg-btn-colors rounded-full w-8 h-8 flex items-center justify-center rotate-[-45deg]">
+                  <i class="fa-solid fa-arrow-right text-[#1C1C1C] "></i>
+                </div>
+                <a class="text-color-2 font-extrabold text-3xl">Rinterio</a>
+              </div>
+            </div>
+            <!-- main menu -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1  font-[500]">
+                  <li class=""><a class="text-color-2">Home</a></li class="">
+                  <li class=""><a class="text-color-3">About</a></li class="">
+                  <li class=""><a class="text-color-3">Blog</a></li class="">
+                  <li class=""><a class="text-color-3">Pages</a></li class="">
+                  <li class=""><a class="text-color-3">Contact Us</a></li class="">
+              </ul>
+              
+            </div>
+            <div tabindex="0" role="button" class="navbar-end lg:hidden  shadow-md rounded-full w-10 h-10 flex items-center justify-center fixed top-4 right-4 pt-2 ">
+              <i class="fa-solid fa-bars "></i>
+            </div>
+            <div class="navbar-end md:flex space-x-5 hidden">
+              <div class="shadow-md rounded-full w-8 h-8 py-2 px-2 ">
+                <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
+              </div>
+              <div class="shadow-md rounded-full w-8 h-8 py-2 px-1.5 ">
+                <i class="fa-solid fa-cart-shopping text-color-3 text-center"></i>
+              </div>
+              <!-- button section -->
+              <div class="bg-btn-colors py-[12px] px-[20px] rounded-full flex items-center ">
+                <a class="text-white font-medium px-2">Book Consult</a>
+                <div class="bg-[#1C1C1C] rounded-full w-8 h-8 flex items-center justify-center rotate-[-45deg]">
+                    <i class="fa-solid fa-arrow-right text-[#FFFFFF]"></i>
+                </div>
+            </div>
+              
+            </div>
+            </div>
+          </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
