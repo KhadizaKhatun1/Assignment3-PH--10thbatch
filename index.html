@@ -22,6 +22,7 @@
               colors: {
                 clifford: '#da373d',
                 'btn-colors':'#ABEF5F',
+                'bg-color':'rgba(171, 239, 95, 0.5)',
                 'color-1':'#494949',
                 'color-2':'#212121',
                 'color-3':'#737373',
@@ -39,7 +40,8 @@
 </head>
 <body class="font-manrope">
     <header class="md:max-w-[80%] mx-auto bg-[#FFFFFF]">
-        <div class="navbar bg-base-100 my-4">
+      <!-- navbar -->
+        <div class="navbar bg-base-100 my-3">
             <div class="navbar-start">
               
               <div class="rounded-full flex items-center space-x-2">
@@ -53,9 +55,9 @@
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1  font-[500]">
                   <li class=""><a class="text-color-2">Home</a></li class="">
-                  <li class=""><a class="text-color-3">About</a></li class="">
-                  <li class=""><a class="text-color-3">Blog</a></li class="">
-                  <li class=""><a class="text-color-3">Pages</a></li class="">
+                  <li class=""><a class="text-color-3">Services</a></li class="">
+                  <li class=""><a class="text-color-3">Portfolio</a></li class="">
+                  <li class=""><a class="text-color-3">Blogs</a></li class="">
                   <li class=""><a class="text-color-3">Contact Us</a></li class="">
               </ul>
               
@@ -80,7 +82,31 @@
               
             </div>
             </div>
+        </div>
+        <!-- banner -->
+        <div class="px-8 ">
+          <div class="">
+             <div class="flex justify-center items-center ">
+              <img src="./assets/banner.png" alt="">
+             </div>
+             <div class="space-y-5">
+              <h1 class="lg:text-6xl md:text-5xl font-extrabold text-center">A barn house of this design has a <br> striking appearance</h1>
+              <p class="text-center tex-color1">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+             </div>
           </div>
+          <!-- banner btn -->
+          <div class="">
+            <div class="bg-bg-color py-[12px] px-[20px]  rounded-full flex items-center justify-center lg:w-[20%]  mt-3 mx-auto">
+              <a class="text-black font-medium px-2">View Details</a>
+              <div class="bg-btn-colors rounded-full w-8 h-8  flex items-center justify-center rotate-[-45deg]">
+                  <i class="fa-solid fa-arrow-right text-[#FFFFFF]"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+             
+        </div>
     </header>
     <main></main>
     <footer></footer>
